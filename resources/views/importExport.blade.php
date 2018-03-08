@@ -1,19 +1,15 @@
 @extends('layouts.app1')
 
 @section('content')
-<html lang="en">
 
-<head>
 
-	<title>Import - Export Laravel 5</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 
-</head>
 
 
 
-<body>
+
 
 <br/>
 
@@ -25,8 +21,8 @@
 
 		  <div class="panel-heading">
 
-		    <h3 class="panel-title" style="padding:12px 0px;font-size:25px;"><strong>Laravel 5.3 - import export csv or excel file into database example</strong></h3>
-
+		    <h3 class="panel-title" style="padding:12px 0px;font-size:25px;"><strong> Import export csv or excel file </strong></h3>
+				<h3 class="panel-title" style="padding:12px 0px;font-size:25px;"><strong> (CSV/exel Format('name','email','rollno','cgpa'))</strong></h3>
 		  </div>
 
 		  <div class="panel-body">
@@ -57,7 +53,7 @@
 
 
 
-				<h3>Import File Form:</h3>
+			<h3>Import File Form:</h3>
 
 				<form style="border: 4px solid #a1a1a1;margin-top: 15px;padding: 20px;" action="{{ URL::to('admin/importExcel') }}" class="form-horizontal" method="post" enctype="multipart/form-data">
 
@@ -82,7 +78,7 @@
 
 
 
-		    	<h3>Import File From Database:</h3>
+		    	<!--<h3>Import File From Database:</h3>
 
 		    	<div style="border: 4px solid #a1a1a1;margin-top: 15px;padding: 20px;">
 
@@ -92,7 +88,7 @@
 
 					<a href="{{ url('downloadExcel/csv') }}"><button class="btn btn-success btn-lg">Download CSV</button></a>
 
-		    	</div>
+				</div>-->
 
 
 
@@ -102,10 +98,4 @@
 
 	</div>
 
-
-
-</body>
-
-
-
-</html>
+@endsection

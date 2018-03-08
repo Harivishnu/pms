@@ -18,7 +18,8 @@ class CreateStudentsTable extends Migration
 
          $table->string('name');
          $table->string('email')->unique();
-         $table->string('rollno');
+         $table->string('rollno')->unique();
+         $table->string('cgpa');
 
      });
     }

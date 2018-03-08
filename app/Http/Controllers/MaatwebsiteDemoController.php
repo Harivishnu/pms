@@ -15,7 +15,10 @@ class MaatwebsiteDemoController extends Controller
 
 {
 
-
+	public function __construct()
+	{
+			$this->middleware('auth:admin');
+	}
 
 	/**
 
@@ -109,7 +112,7 @@ class MaatwebsiteDemoController extends Controller
 						// 	$insert = ['name' => $v['name'], 'email' => $v['email'], 'rollno' => $v['rollno']];
 						//
 						// }
-						$insert[$i++]= ['name' => $value['name'], 'email' => $value['email'], 'rollno' => $value['rollno']];
+						$insert[$i++]= ['name' => $value['name'], 'email' => $value['email'], 'rollno' => $value['rollno'], 'cgpa' => $value['cgpa']];
 					}
 
 				}
